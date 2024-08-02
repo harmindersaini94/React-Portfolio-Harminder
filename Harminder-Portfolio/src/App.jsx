@@ -1,8 +1,10 @@
 import './App.css'
 import About from './Components/About'
+import Contact from './Components/Contact'
 import Experience from './Components/Experience'
 import Navbar from './Components/Header/Navbar'
 import Home from './Components/Home'
+import Projects from './Components/Projects'
 import TechStack from './Components/TechStack'
 
 function App() {
@@ -19,6 +21,8 @@ function App() {
         <About />
         <TechStack />
         <Experience />
+        <Projects />
+        <Contact />
       </div>
     </div>
 
