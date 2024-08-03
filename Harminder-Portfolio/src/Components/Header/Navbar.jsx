@@ -1,5 +1,5 @@
 import React from 'react'
-import {Link} from 'react-router-dom'
+import {Link, useNavigate} from 'react-router-dom'
 import { FaLinkedin, FaGithub, FaXTwitter, FaInstagram   } from "react-icons/fa6";
 import logoPortfolio from '../../assets/portofolio-Logo.jpg'
 import porLogo from '../../assets/porLogo.png'
@@ -15,24 +15,11 @@ const Navbar = () => {
         </div>
 
         <div className='m-8 flex items-center justify-center gap-4 text-2xl'>
-        <FaGithub />
-        <FaLinkedin />
-        <FaXTwitter />
-        <FaInstagram />
+        <a href='https://github.com/harmindersaini94'><FaGithub /></a>
+        <a href='https://www.linkedin.com/in/harmindersaini94/'><FaLinkedin /></a>
+        <a href='https://x.com/hssaini_11'><FaXTwitter /></a>
+        <a href='https://www.instagram.com/hssaini.11/'><FaInstagram /></a>
         </div>
-
-        <div className='m-8 flex items-center justify-center gap-4 text-2xl'>
-        <FaGithub />
-        <FaLinkedin />
-        <FaXTwitter />
-        <FaInstagram />
-        </div>
-            {/* <Link to="/">HSS</Link>
-            <Link to="https://github.com/harmindersaini94"><FaGithub /></Link>
-            <Link to="https://www.linkedin.com/in/harmindersaini94/"><FaLinkedin /></Link>
-            <Link to="https://x.com/i/flow/login"><FaXTwitter /></Link>
-            <Link to="https://www.instagram.com/"><FaInstagram /></Link> */}
-
     </nav>
   )
 }

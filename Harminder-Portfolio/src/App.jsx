@@ -1,4 +1,5 @@
 
+import { Outlet } from 'react-router-dom'
 import './App.css'
 import About from './Components/About'
 import Contact from './Components/Contact'
@@ -39,7 +40,7 @@ function App() {
         </div> */}
       </div>
       <div className='container mx-auto py-8'>
-    
+          {/* <Outlet /> */}
         <Navbar />
         <Home />
         <About />
