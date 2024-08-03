@@ -1,33 +1,38 @@
-import React from 'react'
+import React, {useState} from 'react'
 import projectimage from '.././assets/projectimage.png'
-import { motion } from "framer-motion"
+import { motion, AnimatePresence  } from "framer-motion"
 
 const projects = [
   {
+    id:1,
     title: "E-Commerce Website",
     image: projectimage,
     description: "A fully functional e-commerce website with features like product listing, shopping cart and used authenticationa s well.",
     technology : ["HTML", "JavaScript", "React.JS", "MongoDB", "Node.js"]
   },
   {
+    id:2,
     title: "E-Commerce Website",
     image: projectimage,
     description: "A fully functional e-commerce website with features like product listing, shopping cart and used authenticationa s well.",
     technology : ["HTML", "JavaScript", "React.JS", "MongoDB", "Node.js"]
   },
   {
+    id:3,
     title: "E-Commerce Website",
     image: projectimage,
     description: "A fully functional e-commerce website with features like product listing, shopping cart and used authenticationa s well.",
     technology : ["HTML", "JavaScript", "React.JS", "MongoDB", "Node.js"]
   },
   {
+    id:4,
     title: "E-Commerce Website",
     image: projectimage,
     description: "A fully functional e-commerce website with features like product listing, shopping cart and used authenticationa s well.",
     technology : ["HTML", "JavaScript", "React.JS", "MongoDB", "Node.js"]
   },
   {
+    id:5,
     title: "E-Commerce Website",
     image: projectimage,
     description: "A fully functional e-commerce website with features like product listing, shopping cart and used authenticationa s well.",
@@ -36,6 +41,9 @@ const projects = [
 ]
 
 const Projects = () => {
+
+  const [selectedId, setSelectedId] = useState(null)
+
   return (
     <div className='border-b border-neutral-900 pb-4'>
       <motion.h2 
@@ -75,6 +83,39 @@ const Projects = () => {
           </div>
         ))}
       </div>
+    
+    {/* New content here */}
+
+    {/* <ul className='relative grid gap-4  grid-cols-[2fr_1fr_2fr] grid-rows-[repeat(2,_1fr)] list-none w-full lg:w-1/2 h-full lg:h-1/2 p-4 m-0'>
+    {projects.map((item, index) => (
+      <motion.div className='relative overflow-hidden bg-slate-900 cursor-pointer will-change-transform shadow-md border-r-8 transform-none origin-[50% 50% 0px]' 
+      key={index} layoutId={item.id} onClick={() => setSelectedId(item.id)}>
+        <motion.h5>{item.description}</motion.h5>
+        <motion.h2>{item.title}</motion.h2>
+      </motion.div>
+    ))}
+
+    <AnimatePresence>
+      {selectedId && (
+        <motion.div className='w-full lg:w-1/2 h-full lg:h-1/2 p-4 m-0' layoutId={selectedId}>
+          <motion.h5>Harminder</motion.h5>
+          <motion.h2>SD</motion.h2>
+          <motion.button onClick={() => setSelectedId(null)} />
+        </motion.div>
+      )}
+    </AnimatePresence>
+    </ul> */}
+ 
+    {/* {projects.map((item, index) => (
+      <motion.div className='relative overflow-hidden bg-slate-100 cursor-pointer will-change-transform shadow-md border-r-8 transform-none origin-[50% 50% 0px]' key={index} layoutId={item.description} onClick={() => setSelectedId(item.description)}>
+        <motion.h5>{item.description}</motion.h5>
+        <motion.h2>{item.title}</motion.h2>
+      </motion.div>
+    ))} */}
+
+
+
+    
     </div>
   )
 }

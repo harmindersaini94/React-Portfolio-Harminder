@@ -2,13 +2,25 @@ import React from 'react'
 import {Link} from 'react-router-dom'
 import { FaLinkedin, FaGithub, FaXTwitter, FaInstagram   } from "react-icons/fa6";
 import logoPortfolio from '../../assets/portofolio-Logo.jpg'
+import porLogo from '../../assets/porLogo.png'
+import SiteLogo from '../../assets/SiteLogo.png'
+import { FaHome } from "react-icons/fa";
+import { SiAboutdotme } from "react-icons/si";
 
 const Navbar = () => {
   return (
-    <nav className='mb-18 flex items-center justify-between py-6'>
-        <div className='flex flex-shrink-0 p-6 items-center'>
-            <img className='mx-2 w-10' src={logoPortfolio} alt='Harminder-Singh-Saini' width='70px' height='70px'></img>
+    <nav className='mb-18 flex items-center justify-between py-2'>
+        <div className='flex flex-shrink-0 p-2 items-center'>
+            <img className='mx-2 w-20' src={SiteLogo} alt='Harminder-Singh-Saini' width='150px' height='150px'></img>
         </div>
+
+        <div className='m-8 flex items-center justify-center gap-4 text-2xl'>
+        <FaGithub />
+        <FaLinkedin />
+        <FaXTwitter />
+        <FaInstagram />
+        </div>
+
         <div className='m-8 flex items-center justify-center gap-4 text-2xl'>
         <FaGithub />
         <FaLinkedin />
