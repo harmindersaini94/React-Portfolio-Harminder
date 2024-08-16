@@ -15,7 +15,7 @@ const projects = [
       "2. This project showcases my skills and projects with smooth animations and transitions, providing an engaging user experience.",
     technology: ["HTML", "Tailwind", "JS", "React", "Framer Motion", "Node"],
     githublink: "https://github.com/harmindersaini94/React-Portfolio-Harminder",
-    liveSiteLink: "",
+    liveSiteLink: "https://react-portfolio-harminder.vercel.app/",
   },
   {
     id: 2,
@@ -37,7 +37,7 @@ const projects = [
       "Appwrite",
     ],
     githublink: "https://github.com/harmindersaini94/Final_Blog_Project",
-    liveSiteLink: "",
+    liveSiteLink: "https://tech-blog-sooty-seven.vercel.app/",
   },
   {
     id: 3,
@@ -59,7 +59,7 @@ const projects = [
       "LocalStorage",
     ],
     githublink: "https://github.com/harmindersaini94/Interactive_ToDo",
-    liveSiteLink: "",
+    liveSiteLink: "https://interactive-todo.vercel.app/",
   },
 ];
 
