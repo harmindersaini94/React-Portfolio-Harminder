@@ -1,6 +1,5 @@
 import React, { useEffect, useRef } from "react";
 import imgPortfolio from "../assets/Portfolio_Image.jpg";
-import sideImage from "../assets/sideImage.jpg";
 import { motion } from "framer-motion";
 import Typed from "typed.js";
 
@@ -59,7 +58,7 @@ const Home = () => {
               animate={{ x: 0, opacity: 1 }}
               transition={{ duration: 0.5, delay: 0.5 }}
               ref={workRoles}
-              className=" bg-gradient-to-r from-pink-300 via-slate-500 to-purple-500 bg-clip-text text-4xl tracking-tight text-transparent"
+              className=" bg-gradient-to-r from-pink-300 via-slate-500 to-purple-500 bg-clip-text text-4xl tracking-tight text-transparent h-10"
             >
               Full Stack Developer
             </motion.span>
