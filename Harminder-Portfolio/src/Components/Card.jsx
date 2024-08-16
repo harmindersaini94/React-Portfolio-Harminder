@@ -19,7 +19,8 @@ const Card = ({image, githublink, liveSiteLink}) => {
             <div className="relative p-2">
               <a
                 href={liveSiteLink}
-                alt="Visit Website"
+                alt="Live Website"
+                                target="_blank"
                 className="cursor-pointer text-xl font-bold mb-2 whitespace-nowrap overflow-hidden overflow-ellipsis text-left"
               >
                 <VscLiveShare />
@@ -28,7 +29,8 @@ const Card = ({image, githublink, liveSiteLink}) => {
             <div className="text-lg">
               <a
                 href={githublink}
-                alt="Visit Website"
+                alt="Github"
+                target="_blank"
                 className="cursor-pointer text-xl font-bold mb-2 whitespace-nowrap overflow-hidden overflow-ellipsis text-left"
               >
                 <FaSquareGithub />
