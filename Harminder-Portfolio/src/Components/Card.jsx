@@ -15,7 +15,7 @@ const Card = ({image, githublink, liveSiteLink}) => {
           className="w-[300px] h-[300px] lg:h-[300px] transition-transform group-hover:scale-110 duration-200 object-cover object-center"
         />
         <div className="absolute inset-0 flex items-end bg-gradient-to-t from-black/60 to-transparent">
-          <div className="p-2 text-white flex items-center justify-between bg-gray-800 rounded-lg shadow-lg gap-2">
+          <div className="w-full text-white flex items-center justify-between bg-transparent shadow-lg m-2">
             <div className="relative p-2">
               <a
                 href={liveSiteLink}

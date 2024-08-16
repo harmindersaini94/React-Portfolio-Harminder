@@ -11,7 +11,8 @@ const projects = [
     title: "Portfolio",
     image: project1,
     description:
-      "A fully functional e-commerce website with features like product listing, shopping cart and used authenticationa s well.",
+      "1. A dynamic and responsive portfolio website built using HTML, Tailwind CSS, JavaScript, React, Framer Motion, and Node.js.\n" +
+      "2. This project showcases my skills and projects with smooth animations and transitions, providing an engaging user experience.",
     technology: ["HTML", "Tailwind", "JS", "React", "Framer Motion", "Node"],
     githublink: "https://github.com/harmindersaini94/React-Portfolio-Harminder",
     liveSiteLink: "",
@@ -21,8 +22,20 @@ const projects = [
     title: "Tech Blog",
     image: project2,
     description:
-      "A fully functional e-commerce website with features like product listing, shopping cart and used authenticationa s well.",
-      technology: ["HTML", "Tailwind", "JS", "React", "Framer Motion", "Node", "React-Redux", "React-DOM", "Appwrite"],
+      "1. A modern and responsive website built using HTML, Tailwind CSS, JavaScript, React, Framer Motion, Node.js, React-Redux, and React-DOM for front-end handling.\n" +
+      "2. Backend, including data storage and authentication, managed by Appwrite backend service.\n" +
+      "3. Hosted on Vercel for fast and reliable performance.",
+    technology: [
+      "HTML",
+      "Tailwind",
+      "JS",
+      "React",
+      "Framer Motion",
+      "Node",
+      "React-Redux",
+      "React-DOM",
+      "Appwrite",
+    ],
     githublink: "https://github.com/harmindersaini94/Final_Blog_Project",
     liveSiteLink: "",
   },
@@ -31,15 +44,26 @@ const projects = [
     title: "Interactive Todo",
     image: project3,
     description:
-      "A fully functional e-commerce website with features like product listing, shopping cart and used authenticationa s well.",
-      technology: ["HTML", "Tailwind", "JS", "React", "Framer Motion", "Node", "React-Redux", "React-DOM", "LocalStorage"],
+    "1. Created a responsive and interactive TODO application using React, and styled with Tailwind CSS.\n" +
+    "2. State is managed in the application using Redux and made use of local storage for data management.\n" +
+    "3. Hosted on Vercel for fast and reliable performance.",
+    technology: [
+      "HTML",
+      "Tailwind",
+      "JS",
+      "React",
+      "Framer Motion",
+      "Node",
+      "React-Redux",
+      "React-DOM",
+      "LocalStorage",
+    ],
     githublink: "https://github.com/harmindersaini94/Interactive_ToDo",
     liveSiteLink: "",
   },
 ];
 
 const Projects = () => {
-
   return (
     <div className="border-b border-neutral-900 pb-4">
       <motion.h2
@@ -63,13 +87,6 @@ const Projects = () => {
               transition={{ duration: 1.5 }}
               className="w-full lg:w-1/4 flex flex-wrap justify-center items-center gap-8 content-center"
             >
-              {/* <img
-                src={project.image}
-                width="150px"
-                height="150px"
-                className="mb-6 rounded"
-                alt={project.image}
-              /> */}
               <Card
                 image={project.image}
                 githublink={project.githublink}
@@ -83,13 +100,13 @@ const Projects = () => {
               transition={{ duration: 1.5 }}
               className="w-full max-w-xl lg:w-3/4"
             >
-              <h6 className="mb-2 font-semibold">{project.title}</h6>
-              <p className="mb-4 text-neutral-400">{project.description}</p>
+              <h6 className="bg-gradient-to-r from-pink-300 via-slate-500 to-purple-500 bg-clip-text tracking-tight text-transparent font-bold text-xl block mb-2">{project.title}</h6>
+              <p className="mb-4 text-neutral-400 break-words whitespace-pre-line text-justify">{project.description}</p>
               <div className="flex flex-wrap gap-2">
                 {project.technology.map((tech, index) => (
                   <span
                     key={index}
-                    className="mr-2 rounded bg-neutral-900 px-2 py-1 text-sm font-medium text-purple-800"
+                    className="mr-2 mt-2 rounded bg-neutral-800 px-2 py-1 text-sm font-medium text-purple-700"
                   >
                     {tech}
                   </span>
