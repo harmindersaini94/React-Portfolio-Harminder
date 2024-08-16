@@ -1,52 +1,44 @@
 import React, { useState } from "react";
-import projectimage from ".././assets/projectimage.png";
-import { motion, AnimatePresence } from "framer-motion";
+import project1 from ".././assets/project1.png";
+import project2 from ".././assets/project2.png";
+import project3 from ".././assets/project3.png";
+import { motion } from "framer-motion";
+import Card from "./Card";
 
 const projects = [
   {
     id: 1,
-    title: "E-Commerce Website",
-    image: projectimage,
+    title: "Portfolio",
+    image: project1,
     description:
       "A fully functional e-commerce website with features like product listing, shopping cart and used authenticationa s well.",
-    technology: ["HTML", "JavaScript", "React.JS", "MongoDB", "Node.js"],
+    technology: ["HTML", "Tailwind", "JS", "React", "Framer Motion", "Node"],
+    githublink: "https://github.com/harmindersaini94/React-Portfolio-Harminder",
+    liveSiteLink: "",
   },
   {
     id: 2,
-    title: "E-Commerce Website",
-    image: projectimage,
+    title: "Tech Blog",
+    image: project2,
     description:
       "A fully functional e-commerce website with features like product listing, shopping cart and used authenticationa s well.",
-    technology: ["HTML", "JavaScript", "React.JS", "MongoDB", "Node.js"],
+      technology: ["HTML", "Tailwind", "JS", "React", "Framer Motion", "Node", "React-Redux", "React-DOM", "Appwrite"],
+    githublink: "https://github.com/harmindersaini94/Final_Blog_Project",
+    liveSiteLink: "",
   },
   {
     id: 3,
-    title: "E-Commerce Website",
-    image: projectimage,
+    title: "Interactive Todo",
+    image: project3,
     description:
       "A fully functional e-commerce website with features like product listing, shopping cart and used authenticationa s well.",
-    technology: ["HTML", "JavaScript", "React.JS", "MongoDB", "Node.js"],
-  },
-  {
-    id: 4,
-    title: "E-Commerce Website",
-    image: projectimage,
-    description:
-      "A fully functional e-commerce website with features like product listing, shopping cart and used authenticationa s well.",
-    technology: ["HTML", "JavaScript", "React.JS", "MongoDB", "Node.js"],
-  },
-  {
-    id: 5,
-    title: "E-Commerce Website",
-    image: projectimage,
-    description:
-      "A fully functional e-commerce website with features like product listing, shopping cart and used authenticationa s well.",
-    technology: ["HTML", "JavaScript", "React.JS", "MongoDB", "Node.js"],
+      technology: ["HTML", "Tailwind", "JS", "React", "Framer Motion", "Node", "React-Redux", "React-DOM", "LocalStorage"],
+    githublink: "https://github.com/harmindersaini94/Interactive_ToDo",
+    liveSiteLink: "",
   },
 ];
 
 const Projects = () => {
-  const [selectedId, setSelectedId] = useState(null);
 
   return (
     <div className="border-b border-neutral-900 pb-4">
@@ -69,14 +61,19 @@ const Projects = () => {
               whileInView={{ opacity: 1, x: 0 }}
               initial={{ opacity: 0, x: -100 }}
               transition={{ duration: 1.5 }}
-              className="w-full lg:w-1/4"
+              className="w-full lg:w-1/4 flex flex-wrap justify-center items-center gap-8 content-center"
             >
-              <img
+              {/* <img
                 src={project.image}
                 width="150px"
                 height="150px"
                 className="mb-6 rounded"
                 alt={project.image}
+              /> */}
+              <Card
+                image={project.image}
+                githublink={project.githublink}
+                liveSiteLink={project.liveSiteLink}
               />
             </motion.div>
 

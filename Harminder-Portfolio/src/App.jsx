@@ -12,7 +12,6 @@ import { motion, useScroll, useSpring } from "framer-motion";
 function App() {
   // VERY IMP, name here should be scrollYProgress only same for ScaleX
   const { scrollYProgress } = useScroll(); // Means the scroll of Y axis (up down) will be recorded here
-  console.log(scrollYProgress);
   const scaleX = useSpring(scrollYProgress, {
     // Means showing the record on the X-axis
     stiffness: 100,
