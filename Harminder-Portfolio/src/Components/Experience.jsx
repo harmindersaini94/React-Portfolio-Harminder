@@ -7,12 +7,11 @@ const experience = [
     role: "Full Stack Developer",
     Company: "E-One Moli Energy",
     Description:
-      "1. Utilized Agile methodologies to create custom C#/VB Windows desktop applications using .NET framework 4.5 and MVC design pattern, collaborating with end users\n" +
-      "2. Designed and maintained databases using SQL Server and MySQL. Leveraged the EF migration feature to provide incremental updates to the database schema, keeping it in sync with the application’s data models.\n" +
-      "3. Maintained the organization’s internal website by leveraging ASP.NET, JavaScript, and React for frontend development, and .NET framework for backend solutions.\n" +
-      "4. Created multiple unit tests as well as integration tests to evaluate the application using Visual Studio. Utilized debugging for in-depth analysis of code functionality.\n" +
-      "5. Enhanced desktop application efficiency by 30% through strategic code refinement and logic optimization.\n" +
-      "6. Engineered and deployed a robust API tool for executing SQL queries, facilitating seamless data delivery to analysts; rigorously validated API endpoints using Postman.",
+      "• Successfully transitioned data handling from Datasets to Lists, resulting in improved performance and simplified codebase. Enhanced data access speed by 30% and reduced memory usage by 20%.\n" +
+      "• Created an API endpoint using Express.js that provides scientists with a JSON response containing a list of affected cells, automating a previously manual query process thus increasing productivity by 50%.\n" +
+      "• Utilized .NET's Entity Framework (EF) ORM to interact with SQL Server, enhancing my understanding of ORM functionality and how database operations are performed efficiently.\n" +
+      "• Contributed to the migration of the internal website from jQuery, Knockout.js, and older JavaScript versions to a modern MVC architecture using ASP.NET Core and React, which is predicted to reduce maintenance time by 40%.\n" +
+      "• Developed comprehensive unit and integration tests using Visual Studio to evaluate application performance and reliability, resulting in reduced downtime in production.",
 
     technologies: ["C#/VB", ".NET", "ASP.Net", "MySql", "JS", "React"],
   },
@@ -21,10 +20,10 @@ const experience = [
     role: "Information Technology Support Assistant",
     Company: "Douglas College",
     Description:
-      "1. Developed a full-stack web application using React for frontend, Spring Boot for backend microservices, and MongoDB as the database.\n" +
-      "2. Implemented an automated Python script using the Beautiful Soup library, which detected ‘page not found’ errors due to website redirects, reducing manual effort by 50%.\n" +
-      "3. Resolved a wide range of technical issues for students, including Blackboard logins, online class glitches, and hardware malfunctions.\n" +
-      "4. Created a user-centric application leveraging Microsoft Power Automate and SharePoint, facilitating mentor-mentee connections and enriching student communication networks.",
+      "• Implemented an automated Python script using the Beautiful Soup library to detect ‘page not found’ errors due to website redirects, reducing manual effort by 50%.\n" +
+      "• Created an app using Microsoft Power Automate and SharePoint for students to register as mentors or mentees, enriching student assistance across a vast array of topics.\n" +
+      "• Collaborated with the team to resolve a wide range of technical issues logged by students on the student portal, resulting in an improved and refined user experience.\n" +
+      "• Contributed to the development of a college-housing portal web application using React, Spring Boot, and MongoDB, providing students with essential housing information during their tenure of study.",
 
     technologies: ["Python", "MS Power Automate", "HTML/CSS", "JS", "MongoDB", "Sharepoint"],
   },
@@ -33,12 +32,11 @@ const experience = [
     role: "Software Developer",
     Company: "Tata Consultancy Services",
     Description:
-      "1. Revamped the code base of ALV reports for streamlined data presentation, aligning with client specifications for improved analysis.\n" +
-      "2. Tailored SmartForms applications to user needs, achieving enhanced document generation with heightened precision.\n" +
-      "3. Initiated BDC recordings for SAP data migration and crafted insightful software reports leveraging data structures.\n" +
-      "4. Mastered various SAP objects, including Module pool, BAPI, BADI, and User Exits, to deliver robust solutions.\n" +
-      "5. Engaged in cross-functional training to broaden expertise in SAP modules such as MM, SD, and Success Factors.\n" +
-      "6. Documented technical changes meticulously in specific tickets for comprehensive future reference.",
+      "• Revamped the code base of ALV reports for streamlined data presentation, aligning with client specifications for improved analysis.\n" +
+      "• Tailored SmartForms applications to user needs, achieving enhanced document generation with heightened precision.\n" +
+      "• Initiated BDC recordings for SAP data migration and crafted insightful software reports leveraging data structures.\n" +
+      "• Mastered various SAP objects, including Module pool, BAPI, BADI, and User Exits, to deliver robust solutions.\n" +
+      "• Engaged in cross-functional training to broaden expertise in SAP modules such as MM, SD, and Success Factors.",
 
     technologies: ["SAP", "ABAP", "ALV", "SAP HANA", "BAPI", "USER EXIT"],
   },

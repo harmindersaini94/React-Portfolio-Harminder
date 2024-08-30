@@ -11,8 +11,8 @@ const projects = [
     title: "Portfolio",
     image: project1,
     description:
-      "1. A dynamic and responsive portfolio website built using HTML, Tailwind CSS, JavaScript, React, Framer Motion, and Node.js.\n" +
-      "2. This project showcases my skills and projects with smooth animations and transitions, providing an engaging user experience.",
+      "• A dynamic and responsive portfolio website built using HTML, Tailwind CSS, JavaScript, React, Framer Motion, and Node.js.\n" +
+      "• This project showcases my skills and projects with smooth animations and transitions, providing an engaging user experience.",
     technology: ["HTML", "Tailwind", "JS", "React", "Framer Motion", "Node"],
     githublink: "https://github.com/harmindersaini94/React-Portfolio-Harminder",
     liveSiteLink: "https://react-portfolio-harminder.vercel.app/",
@@ -22,9 +22,9 @@ const projects = [
     title: "Tech Blog",
     image: project2,
     description:
-      "1. A modern and responsive website built using HTML, Tailwind CSS, JavaScript, React, Framer Motion, Node.js, React-Redux, and React-DOM for front-end handling.\n" +
-      "2. Backend, including data storage and authentication, managed by Appwrite backend service.\n" +
-      "3. Hosted on Vercel for fast and reliable performance.",
+      "• A modern and responsive website built using HTML, Tailwind CSS, JavaScript, React, Framer Motion, Node.js, React-Redux, and React-DOM for front-end handling.\n" +
+      "• Backend, including data storage and authentication, managed by Appwrite backend service.\n" +
+      "• Hosted on Vercel for fast and reliable performance.",
     technology: [
       "HTML",
       "Tailwind",
@@ -44,9 +44,9 @@ const projects = [
     title: "Interactive Todo",
     image: project3,
     description:
-    "1. Created a responsive and interactive TODO application using React, and styled with Tailwind CSS.\n" +
-    "2. State is managed in the application using Redux and made use of local storage for data management.\n" +
-    "3. Hosted on Vercel for fast and reliable performance.",
+    "• Created a responsive and interactive TODO application using React, and styled with Tailwind CSS.\n" +
+    "• State is managed in the application using Redux and made use of local storage for data management.\n" +
+    "• Hosted on Vercel for fast and reliable performance.",
     technology: [
       "HTML",
       "Tailwind",
