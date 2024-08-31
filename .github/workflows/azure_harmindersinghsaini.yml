@@ -52,5 +52,5 @@ jobs:
         with:
           app-name: 'HarminderSinghSaini'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_AD784BA5A38F412CA4A1525822A90ACD }}
+          publish-profile: ${{ secrets.AZURE_WEBAPP_PUBLISH_PROFILE }}
           package: .
