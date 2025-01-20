@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from "react";
-import imgPortfolio from "../assets/Portfolio_Image.jpg";
+// import imgPortfolio from "../assets/Portfolio_Image.jpg";
 import imgPort2 from "../assets/newImage.jpg";
-import imgPort3 from "../assets/myImg.jpg";
+// import imgPort3 from "../assets/myImg.jpg";
 import { motion } from "framer-motion";
 import Typed from "typed.js";
 
