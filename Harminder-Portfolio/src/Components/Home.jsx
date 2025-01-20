@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from "react";
 // import imgPortfolio from "../assets/Portfolio_Image.jpg";
-import imgPort2 from "../assets/newImage.jpg";
-// import imgPort3 from "../assets/myImg.jpg";
+//import imgPort2 from "../assets/newImage.jpg";
+ import imgPort3 from "../assets/myImg.jpg";
 import { motion } from "framer-motion";
 import Typed from "typed.js";
 
@@ -77,13 +77,13 @@ const Home = () => {
           >
             <img
               //src={imgPortfolio}
-              src={imgPort2}
+              src={imgPort3}
               className="w-1/2 h-1/2 rounded-full mx-auto"
               alt="Harminder Singh Saini"
-              width="450px"
-              height="450px"
-              //width="650px"
-              //height="650px"
+              //width="450px"
+              //height="450px"
+              width="500px"
+              height="500px"
             />
           </motion.div>
         </div>
