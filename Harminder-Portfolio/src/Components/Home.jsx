@@ -1,5 +1,6 @@
 import React, { useEffect, useRef } from "react";
 import imgPortfolio from "../assets/Portfolio_Image.jpg";
+import imgPort2 from "../assets/newImage.jpg";
 import { motion } from "framer-motion";
 import Typed from "typed.js";
 
@@ -74,11 +75,14 @@ const Home = () => {
             className="flex justify-center"
           >
             <img
-              src={imgPortfolio}
+              //src={imgPortfolio}
+              src={imgPort2}
               className="w-1/2 h-1/2 rounded-full mx-auto"
               alt="Harminder Singh Saini"
               width="450px"
               height="450px"
+              //width="650px"
+              //height="650px"
             />
           </motion.div>
         </div>

@@ -3,40 +3,39 @@ import { motion } from "framer-motion";
 
 const experience = [
   {
-    year: "Mar 2022-Present",
+    year: "Mar 2022 - Present",
     role: "Full Stack Developer",
-    Company: "E-One Moli Energy",
+    Company: "E-One Moli Energy (Canada) Limited",
     Description:
-      "• Successfully transitioned data handling from Datasets to Lists, resulting in improved performance and simplified codebase. Enhanced data access speed by 30% and reduced memory usage by 20%.\n" +
-      "• Created an API endpoint using Express.js that provides scientists with a JSON response containing a list of affected cells, automating a previously manual query process thus increasing productivity by 50%.\n" +
-      "• Utilized .NET's Entity Framework (EF) ORM to interact with SQL Server, enhancing my understanding of ORM functionality and how database operations are performed efficiently.\n" +
-      "• Contributed to the migration of the internal website from jQuery, Knockout.js, and older JavaScript versions to a modern MVC architecture using ASP.NET Core and React, which is predicted to reduce maintenance time by 40%.\n" +
-      "• Developed comprehensive unit and integration tests using Visual Studio to evaluate application performance and reliability, resulting in reduced downtime in production.",
+      "• Transitioned data handling from Datasets to Lists, achieving a 30% improvement in data access speed and a 20% reduction in memory usage, while streamlining the codebase for enhanced maintainability\n" +
+      "• Designed and implemented an Express.js API endpoint to automate the retrieval of affected cell data, replacing a manual query process and increasing team productivity by 50%\n" +
+      "• Leveraged .NET Entity Framework to interact with SQL Server, executing efficient database operations and optimizing ORM performance\n" +
+      "• Spearheaded the migration of an internal website from legacy technologies (jQuery, Knockout.js) to a modern MVC architecture using ASP.NET Core and React, projected to reduce maintenance efforts by 40%\n" +
+      "• Developed and executed comprehensive unit and integration tests in Visual Studio, ensuring application reliability and minimizing production downtime",
 
     technologies: ["C#/VB", ".NET", "ASP.Net", "MySql", "JS", "React"],
   },
   {
-    year: "Sep 2020-May-2021",
-    role: "Information Technology Support Assistant",
+    year: "Sep 2020 - May 2021",
+    role: "IT Support Assistant",
     Company: "Douglas College",
     Description:
-      "• Implemented an automated Python script using the Beautiful Soup library to detect ‘page not found’ errors due to website redirects, reducing manual effort by 50%.\n" +
-      "• Created an app using Microsoft Power Automate and SharePoint for students to register as mentors or mentees, enriching student assistance across a vast array of topics.\n" +
-      "• Collaborated with the team to resolve a wide range of technical issues logged by students on the student portal, resulting in an improved and refined user experience.\n" +
-      "• Contributed to the development of a college-housing portal web application using React, Spring Boot, and MongoDB, providing students with essential housing information during their tenure of study.",
+      "• Automated error detection using Python and Beautiful Soup, reducing manual effort by 50%\n" +
+      "• Developed a mentor-mentee registration app using Power Automate and SharePoint, improving student support services\n" +
+      "• Contributed to the development of a web portal using React, Spring Boot, and MongoDB to address student housing needs\n" +
+      "• Troubleshot technical issues, enhancing user experience across student portal platforms",
 
     technologies: ["Python", "MS Power Automate", "HTML/CSS", "JS", "MongoDB", "Sharepoint"],
   },
   {
     year: "Jan 2018 - Jul 2019",
-    role: "Software Developer",
+    role: "Systems Engineer, SAP ABAP",
     Company: "Tata Consultancy Services",
     Description:
-      "• Revamped the code base of ALV reports for streamlined data presentation, aligning with client specifications for improved analysis.\n" +
-      "• Tailored SmartForms applications to user needs, achieving enhanced document generation with heightened precision.\n" +
-      "• Initiated BDC recordings for SAP data migration and crafted insightful software reports leveraging data structures.\n" +
-      "• Mastered various SAP objects, including Module pool, BAPI, BADI, and User Exits, to deliver robust solutions.\n" +
-      "• Engaged in cross-functional training to broaden expertise in SAP modules such as MM, SD, and Success Factors.",
+      "• Redesigned ALV reports for improved data visualization and client-specific analysis\n" +
+      "• Enhanced SAP document workflows using Smart Forms, increasing precision and user satisfaction\n" +
+      "• Delivered efficient data migration solutions through BDC recordings and SAP reports\n" +
+      "• Expanded expertise in SAP modules, including MM, SD, and Success Factors, contributing to cross-functional projects",
 
     technologies: ["SAP", "ABAP", "ALV", "SAP HANA", "BAPI", "USER EXIT"],
   },

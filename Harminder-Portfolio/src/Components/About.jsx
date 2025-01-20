@@ -43,11 +43,7 @@ const About = () => {
                 Experienced Software Developer
               </span>
               <p className="mb-4">
-                With over 4 years of experience in software development, I bring
-                a robust track record of delivering high-quality software
-                solutions. My educational background includes a Bachelor’s
-                Degree in Computer Science and Engineering from India and a
-                Post-Baccalaureate Diploma in Computing Studies from Canada.
+              Result-driven Full Stack Developer with 5+ years of experience in designing, developing, and optimizing scalable web applications and APIs. Proficient in modern frameworks like React and Node.js, coupled with robust backend expertise in .NET, SQL, and SAP ABAP. Adept at improving application performance, streamlining processes, and delivering reliable solutions. Passionate about leveraging cutting-edge technologies to solve real-world problems and deliver seamless user experiences
               </p>
 
               <span className="bg-gradient-to-r from-pink-300 via-slate-500 to-purple-500 bg-clip-text tracking-tight text-transparent font-bold text-xl block mb-2">

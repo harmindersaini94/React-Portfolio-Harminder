@@ -6,6 +6,8 @@ import { SiMongodb } from "react-icons/si";
 import { FaNodeJs } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io5";
 import { motion } from "framer-motion";
+import { FaJava } from "react-icons/fa";
+import { PiFileCSharp } from "react-icons/pi";
 
 const iconVariants = (duration) => ({
   initial: { y: -10 },
@@ -90,6 +92,24 @@ const TechStack = () => {
           className="rounded-2xl border-4 border-neutral-800 p-4"
         >
           <SiMongodb className="text-7xl text-green-500" />
+        </motion.div>
+
+        <motion.div
+          variants={iconVariants(3.5)}
+          initial="initial"
+          animate="animate"
+          className="rounded-2xl border-4 border-neutral-800 p-4"
+        >
+          <FaJava className="text-7xl text-blue-500" />
+        </motion.div>
+
+        <motion.div
+          variants={iconVariants(3.5)}
+          initial="initial"
+          animate="animate"
+          className="rounded-2xl border-4 border-neutral-800 p-4"
+        >
+          <PiFileCSharp className="text-7xl text-purple-500" />
         </motion.div>
       </motion.div>
     </div>

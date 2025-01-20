@@ -20,7 +20,7 @@ const Contact = () => {
           transition={{ duration: 1.5 }}
           className="my-4"
         >
-          13325 102A Avenue, Surrey, BC, Canada
+          Surrey, V3T 5J7, BC, Canada
         </motion.p>
 
         <motion.p
