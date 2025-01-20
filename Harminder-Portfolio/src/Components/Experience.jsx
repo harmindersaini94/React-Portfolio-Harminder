@@ -49,7 +49,7 @@ const Experience = () => {
         transition={{ duration: 1.5 }}
         className="my-20 text-center text-4xl"
       >
-        Experience
+        Exp<span className="text-teal-600">erie</span>nce
       </motion.h2>
       <div>
         {experience.map((experience, index) => (
@@ -61,20 +61,20 @@ const Experience = () => {
               whileInView={{ opacity: 1, x: 0 }}
               initial={{ opacity: 0, x: -100 }}
               transition={{ duration: 1.5 }}
-              className="w-full lg:w-1/4"
+              className="w-full lg:w-2/4"
             >
-              <p className="bg-gradient-to-r from-pink-300 via-slate-500 to-purple-500 bg-clip-text tracking-tight text-transparent font-bold text-xl mb-2">{experience.year}</p>
+              <p className="bg-gradient-to-r from-teal-300 via-slate-500 to-teal-500 bg-clip-text tracking-tight text-transparent font-bold text-xl mb-2">{experience.year}</p>
             </motion.div>
 
             <motion.div
               whileInView={{ opacity: 1, x: 0 }}
               initial={{ opacity: 0, x: 100 }}
               transition={{ duration: 1.5 }}
-              className="w-full max-w-xl lg:w-3/4"
+              className="w-full max-w-xl lg:w-2/4"
             >
-              <h6 className="bg-gradient-to-r from-pink-300 via-slate-500 to-purple-500 bg-clip-text tracking-tight text-transparent font-bold text-xl block mb-2">
+              <h6 className="bg-gradient-to-r from-teal-300 via-slate-500 to-teal-500 bg-clip-text tracking-tight text-transparent font-bold text-xl block mb-2">
                 {experience.role}
-                <span className="bg-gradient-to-r from-pink-300 via-slate-500 to-purple-500 bg-clip-text tracking-tight text-transparent font-semibold text-lg block">
+                <span className="bg-gradient-to-r from-teal-300 via-slate-500 to-teal-500 bg-clip-text tracking-tight text-transparent font-semibold text-lg block">
                   {experience.Company}
                 </span>
               </h6>
@@ -84,7 +84,7 @@ const Experience = () => {
               {experience.technologies.map((tech, index) => (
                 <span
                   key={index}
-                  className="mr-2 mt-2 rounded bg-neutral-800 px-2 py-1 text-sm font-medium text-purple-700"
+                  className="mr-2 mt-2 rounded bg-neutral-800 px-2 py-1 text-sm font-medium text-teal-700"
                 >
                   {tech}
                 </span>

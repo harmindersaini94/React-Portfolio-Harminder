@@ -43,14 +43,14 @@ const Home = () => {
               className="pb-16 text-6xl font-thin tracking-tight lg:mt-16 lg:text-6xl"
             >
               {" "}
-              Harminder Saini
+              Harminder <span className="text-teal-600">Saini</span>
             </motion.h1>
 
             <motion.span
               initial={{ x: -100, opacity: 0 }}
               animate={{ x: 0, opacity: 1 }}
               transition={{ duration: 0.5, delay: 0.5 }}
-              className="bg-gradient-to-r from-pink-300 via-slate-500 to-purple-500 bg-clip-text text-4xl tracking-tight text-transparent"
+              className="bg-gradient-to-r from-teal-300 via-slate-500 to-teal-500 bg-clip-text text-4xl tracking-tight text-transparent"
             >
               I'm a passionate
             </motion.span>
@@ -60,7 +60,7 @@ const Home = () => {
               animate={{ x: 0, opacity: 1 }}
               transition={{ duration: 0.5, delay: 0.5 }}
               ref={workRoles}
-              className=" bg-gradient-to-r from-pink-300 via-slate-500 to-purple-500 bg-clip-text text-4xl tracking-tight text-transparent h-10"
+              className=" bg-gradient-to-r from-teal-300 via-slate-500 to-teal-500 bg-clip-text text-4xl tracking-tight text-transparent h-10"
             >
               Full Stack Developer
             </motion.span>

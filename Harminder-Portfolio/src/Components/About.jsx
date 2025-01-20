@@ -11,7 +11,7 @@ const About = () => {
         transition={{ duration: 1.5 }}
         className="my-20 text-center text-4xl"
       >
-        About <span className="text-neutral-500">Me</span>
+        About <span className="text-teal-600">Me</span>
       </motion.h2>
 
       <div className="flex flex-wrap ">
@@ -39,40 +39,40 @@ const About = () => {
         >
           <div className="flex justify-center lg:justify-start">
             <div className="max-w-xl text-justify">
-              <span className="bg-gradient-to-r from-pink-300 via-slate-500 to-purple-500 bg-clip-text tracking-tight text-transparent font-bold text-xl block mb-2">
+              <span className="bg-gradient-to-r from-teal-300 via-slate-500 to-aqua-500 bg-clip-text tracking-tight text-transparent font-bold text-xl block mb-2">
                 Experienced Software Developer
               </span>
               <p className="mb-4">
               Result-driven Full Stack Developer with 5+ years of experience in designing, developing, and optimizing scalable web applications and APIs. Proficient in modern frameworks like React and Node.js, coupled with robust backend expertise in .NET, SQL, and SAP ABAP. Adept at improving application performance, streamlining processes, and delivering reliable solutions. Passionate about leveraging cutting-edge technologies to solve real-world problems and deliver seamless user experiences
               </p>
 
-              <span className="bg-gradient-to-r from-pink-300 via-slate-500 to-purple-500 bg-clip-text tracking-tight text-transparent font-bold text-xl block mb-2">
+              <span className="bg-gradient-to-r from-teal-300 via-slate-500 to-purple-500 bg-clip-text tracking-tight text-transparent font-bold text-xl block mb-2">
                 Technical Proficiency
               </span>
               <p className="mb-4">
-                <span className="font-bold">Programming Languages: </span> C#,
+                <span className="font-bold italic">Programming Languages: </span> C#,
                 VB, Java, SAP ABAP
                 <br />
-                <span className="font-bold">Web Tech: </span> ASP.NET, HTML/CSS,
+                <span className="font-bold italic">Web Tech: </span> ASP.NET, HTML/CSS,
                 JavaScript, React, React-Redux, NextJS <br />
-                <span className="font-bold">
+                <span className="font-bold italic">
                   Databases & Backend Service:{" "}
                 </span>{" "}
                 MySQL, MongoDB, Firebase, Appwrite <br />
-                <span className="font-bold">Cloud Technologies:</span> Microsoft
+                <span className="font-bold italic">Cloud Technologies:</span> Microsoft
                 Azure
               </p>
 
-              <span className="bg-gradient-to-r from-pink-300 via-slate-500 to-purple-500 bg-clip-text tracking-tight text-transparent font-bold text-xl block mb-2">
+              {/* <span className="bg-gradient-to-r from-teal-300 via-slate-500 to-purple-500 bg-clip-text tracking-tight text-transparent font-bold text-xl block mb-2">
                 Professional Approach
               </span>
               <p className="mb-4">
-                <span className="font-bold">Analytical: </span>I employ a
+                <span className="font-bold italic">Analytical: </span>I employ a
                 methodical approach to problem-solving, ensuring efficient and
                 effective solutions. Collaborative: I thrive in team
                 environments, working closely with colleagues to achieve common
                 goals. <br />
-                <span className="font-bold">Continuous Learning: </span>
+                <span className="font-bold italic">Continuous Learning: </span>
                 Currently enhancing my skills in NextJS and Microsoft Azure to
                 stay at the forefront of industry advancements.
               </p>
@@ -80,6 +80,19 @@ const About = () => {
                 My commitment to excellence and continuous improvement drives me
                 to deliver innovative and reliable software solutions. Let’s
                 connect and explore how I can contribute to your next project!
+              </p> */}
+
+            <span className="bg-gradient-to-r from-teal-300 via-slate-500 to-purple-500 bg-clip-text tracking-tight text-transparent font-bold text-xl block mb-2">
+                Expertise
+              </span>
+              <p className="mb-4">
+                <span className="font-bold italic">Full Stack Web Development<br /></span>
+                <span className="font-bold italic">RESTful API design and implementation <br /></span>
+                <span className="font-bold italic">Performance optimization and scalability <br /></span>
+                <span className="font-bold italic">Project migration to modern architectures (MVC, React)<br /></span>
+                <span className="font-bold italic">Debugging and Troubleshooting issues <br /></span>
+                <span className="font-bold italic">Automation <br /></span>
+                <span className="font-bold italic">Technical support for Product and Services<br /></span>
               </p>
             </div>
           </div>

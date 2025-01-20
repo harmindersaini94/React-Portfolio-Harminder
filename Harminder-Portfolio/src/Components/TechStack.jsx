@@ -31,7 +31,7 @@ const TechStack = () => {
         transition={{ duration: 1.5 }}
         className="my-20 text-center text-4xl"
       >
-        My Tech Stack
+        My <span className="text-teal-600">Tech </span> Stack
       </motion.h2>
 
       <motion.div

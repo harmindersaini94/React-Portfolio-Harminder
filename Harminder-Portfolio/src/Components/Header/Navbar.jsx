@@ -1,6 +1,7 @@
 import React from "react";
 import { FaLinkedin, FaGithub, FaXTwitter, FaInstagram } from "react-icons/fa6";
-import SiteLogo from "../../assets/SiteLogo.png";
+//import SiteLogo from "../../assets/SiteLogo.png";
+import SiteLogo from "../../assets/newLogo.jpg";
 
 const Navbar = () => {
   return (
