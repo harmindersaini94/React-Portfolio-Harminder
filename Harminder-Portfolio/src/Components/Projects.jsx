@@ -15,7 +15,7 @@ const projects = [
       "• This project showcases my skills and projects with smooth animations and transitions, providing an engaging user experience.",
     technology: ["HTML", "Tailwind", "JS", "React", "Framer Motion", "Node"],
     githublink: "https://github.com/harmindersaini94/React-Portfolio-Harminder",
-    liveSiteLink: "https://react-portfolio-harminder.vercel.app/",
+    liveSiteLink: "https://hssaini.vercel.app/", 
   },
   {
     id: 2,

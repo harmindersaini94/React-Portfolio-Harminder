@@ -7,35 +7,39 @@ const experience = [
     role: "Full Stack Developer",
     Company: "E-One Moli Energy (Canada) Limited",
     Description:
-      "• Transitioned data handling from Datasets to Lists, achieving a 30% improvement in data access speed and a 20% reduction in memory usage, while streamlining the codebase for enhanced maintainability\n" +
-      "• Designed and implemented an Express.js API endpoint to automate the retrieval of affected cell data, replacing a manual query process and increasing team productivity by 50%\n" +
-      "• Leveraged .NET Entity Framework to interact with SQL Server, executing efficient database operations and optimizing ORM performance\n" +
-      "• Spearheaded the migration of an internal website from legacy technologies (jQuery, Knockout.js) to a modern MVC architecture using ASP.NET Core and React, projected to reduce maintenance efforts by 40%\n" +
-      "• Developed and executed comprehensive unit and integration tests in Visual Studio, ensuring application reliability and minimizing production downtime",
+      "• Migrated codebase from VB Datasets to C# Lists, utilizing Object-Oriented Programming (OOP) principles and the LINQ API, improving data access speed by 30% and reducing memory usage by 20%\n" +
+      "• Developed a RESTful API with Express.js and MongoDB to automate data retrieval, increasing team productivity by 50%\n" +
+      "• Implemented OAuth-based authentication and authorization in React.js, Angular and ASP.NET MVC\n" +
+      "• Configured CI/CD pipeline using Jenkins as well as Azure to automate build and deployment process\n" +
+      "• Actively collaborated with Product Managers, DevOps to deliver efficient and scalable solutions\n" +
+      "• Gained familiarity with network topology and security principles to ensure secure system design\n" +
+      "• Conducted code reviews to maintain coding standards and to improve code quality\n" +
+      "• Rebuilt an internal website from jQuery and Knockout.js to ASP.NET Core with Angular, reducing maintenance efforts by 40%",
 
-    technologies: ["C#/VB", ".NET", "ASP.Net", "MySql", "JS", "React"],
+    technologies: ["C#/VB", ".NET", "ASP.Net", "MySql", "JS", "Angular", "React"],
   },
   {
     year: "Sep 2020 - May 2021",
     role: "IT Support Assistant",
     Company: "Douglas College",
     Description:
-      "• Automated error detection using Python and Beautiful Soup, reducing manual effort by 50%\n" +
-      "• Developed a mentor-mentee registration app using Power Automate and SharePoint, improving student support services\n" +
-      "• Contributed to the development of a web portal using React, Spring Boot, and MongoDB to address student housing needs\n" +
-      "• Troubleshot technical issues, enhancing user experience across student portal platforms",
+      "• Implemented a web scraper using Python and Beautiful Soup to automate the detection of dead links on a newly built college website, reducing manual effort by 50% and improving validation accuracy\n" +
+      "• Built a mentor-mentee registration app using Power Automate and SharePoint, streamlining student support services and increasing registration efficiency by 40%\n" +
+      "• Developed a microservice using Spring Boot, MongoDB and Angular for a college hostel, supporting over 1,000 users\n" +
+      "• Resolved technical issues on student portal platforms, improving system reliability and user satisfaction by 30%\n" +
+      "• Explored automated testing frameworks and implemented unit tests for critical modules",
 
-    technologies: ["Python", "MS Power Automate", "HTML/CSS", "JS", "MongoDB", "Sharepoint"],
+    technologies: ["Python", "MS Power Automate", "HTML/CSS", "JS", "MongoDB", "Angular", "Sharepoint"],
   },
   {
     year: "Jan 2018 - Jul 2019",
     role: "Systems Engineer, SAP ABAP",
     Company: "Tata Consultancy Services",
     Description:
-      "• Redesigned ALV reports for improved data visualization and client-specific analysis\n" +
-      "• Enhanced SAP document workflows using Smart Forms, increasing precision and user satisfaction\n" +
-      "• Delivered efficient data migration solutions through BDC recordings and SAP reports\n" +
-      "• Expanded expertise in SAP modules, including MM, SD, and Success Factors, contributing to cross-functional projects",
+      "• 2 years of experience as an ABAP/4 programmer consultant with working knowledge in SAP modules like MM, SD and HR\n" +
+      "• Experienced in enhancing standard SAP functionalities using BADI’s, Screen Exits, Menu exits, and Functional module exits\n" +
+      "• Worked on creation of multiple custom reports, interfaces, customer enhancements and smart forms\n" +
+      "• Worked on BDC programs to upload master data, purchase order and purchase info records",
 
     technologies: ["SAP", "ABAP", "ALV", "SAP HANA", "BAPI", "USER EXIT"],
   },
