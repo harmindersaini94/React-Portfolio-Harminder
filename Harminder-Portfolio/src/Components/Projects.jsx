@@ -12,7 +12,8 @@ const projects = [
     image: project1,
     description:
       "• A dynamic and responsive portfolio website built using HTML, Tailwind CSS, JavaScript, React, Framer Motion, and Node.js.\n" +
-      "• This project showcases my skills and projects with smooth animations and transitions, providing an engaging user experience.",
+      "• This project showcases my skills and projects with smooth animations and transitions, providing an engaging user experience.\n" +
+      "• Implemented a CI/CD pipeline using GitHub and Vercel to automate the build and deployment process",
     technology: ["HTML", "Tailwind", "JS", "React", "Framer Motion", "Node"],
     githublink: "https://github.com/harmindersaini94/React-Portfolio-Harminder",
     liveSiteLink: "https://hssaini.vercel.app/", 
@@ -24,7 +25,7 @@ const projects = [
     description:
       "• A modern and responsive website built using HTML, Tailwind CSS, JavaScript, React, Framer Motion, Node.js, React-Redux, and React-DOM for front-end handling.\n" +
       "• Backend, including data storage and authentication, managed by Appwrite backend service.\n" +
-      "• Hosted on Vercel for fast and reliable performance.",
+      "• Implemented a CI/CD pipeline using GitHub and Vercel to automate the build and deployment process",
     technology: [
       "HTML",
       "Tailwind",
@@ -46,7 +47,7 @@ const projects = [
     description:
     "• Created a responsive and interactive TODO application using React, and styled with Tailwind CSS.\n" +
     "• State is managed in the application using Redux and made use of local storage for data management.\n" +
-    "• Hosted on Vercel for fast and reliable performance.",
+    "• Implemented a CI/CD pipeline using GitHub and Vercel to automate the build and deployment process",
     technology: [
       "HTML",
       "Tailwind",
