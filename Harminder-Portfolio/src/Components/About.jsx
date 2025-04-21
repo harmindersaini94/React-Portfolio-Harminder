@@ -40,59 +40,37 @@ const About = () => {
           <div className="flex justify-center lg:justify-start">
             <div className="max-w-xl text-justify">
               <span className="bg-gradient-to-r from-teal-300 via-slate-500 to-aqua-500 bg-clip-text tracking-tight text-transparent font-bold text-xl block mb-2">
-                Experienced Software Developer
+                FullStack Software Engineer
               </span>
               <p className="mb-4">
-              Result-driven Full Stack Developer with 5+ years of experience in designing, developing, and optimizing scalable web applications and APIs. Proficient in modern frameworks like React and Node.js, coupled with robust backend expertise in .NET, SQL, and SAP ABAP. Adept at improving application performance, streamlining processes, and delivering reliable solutions. Passionate about leveraging cutting-edge technologies to solve real-world problems and deliver seamless user experiences
+              Full-Stack Engineer with 5+ years in .NET, C#, ASP.NET, Python, React, and API integrations, optimizing business processes in Agile settings
               </p>
 
               <span className="bg-gradient-to-r from-teal-300 via-slate-500 to-purple-500 bg-clip-text tracking-tight text-transparent font-bold text-xl block mb-2">
                 Technical Proficiency
               </span>
               <p className="mb-4">
-                <span className="font-bold italic">Programming Languages: </span> C#,
-                VB, Java, SAP ABAP
-                <br />
-                <span className="font-bold italic">Web Tech: </span> ASP.NET, HTML/CSS,
-                JavaScript, React, React-Redux, NextJS <br />
-                <span className="font-bold italic">
-                  Databases & Backend Service:{" "}
-                </span>{" "}
+                <span className="font-bold italic">Programming:{" "}</span> 
+                .NET/C#/VB, Python, JavaScript, Java, SAP ABAP <br />
+                <span className="font-bold italic">Web Dev:{" "}</span>
+                ASP.NET Core, Angular, React, React-Redux, Next.js, Django <br />
+                <span className="font-bold italic">Databases & Backend Service:{" "}</span>
                 MySQL, MongoDB, Firebase, Appwrite <br />
-                <span className="font-bold italic">Cloud Technologies:</span> Microsoft
-                Azure
+                <span className="font-bold italic"> Cloud Technologies:{" "}</span> 
+                Azure DevOps, AWS Lambda, Azure Logic Apps, AWS S3, Amazon Lex
               </p>
-
-              {/* <span className="bg-gradient-to-r from-teal-300 via-slate-500 to-purple-500 bg-clip-text tracking-tight text-transparent font-bold text-xl block mb-2">
-                Professional Approach
-              </span>
-              <p className="mb-4">
-                <span className="font-bold italic">Analytical: </span>I employ a
-                methodical approach to problem-solving, ensuring efficient and
-                effective solutions. Collaborative: I thrive in team
-                environments, working closely with colleagues to achieve common
-                goals. <br />
-                <span className="font-bold italic">Continuous Learning: </span>
-                Currently enhancing my skills in NextJS and Microsoft Azure to
-                stay at the forefront of industry advancements.
-              </p>
-              <p>
-                My commitment to excellence and continuous improvement drives me
-                to deliver innovative and reliable software solutions. Let’s
-                connect and explore how I can contribute to your next project!
-              </p> */}
 
             <span className="bg-gradient-to-r from-teal-300 via-slate-500 to-purple-500 bg-clip-text tracking-tight text-transparent font-bold text-xl block mb-2">
                 Expertise
               </span>
-              <p className="mb-4">
-                <span className="font-bold italic">Full Stack Web Development<br /></span>
-                <span className="font-bold italic">RESTful API design and implementation <br /></span>
-                <span className="font-bold italic">Performance optimization and scalability <br /></span>
-                <span className="font-bold italic">Project migration to modern architectures (MVC, React)<br /></span>
-                <span className="font-bold italic">Debugging and Troubleshooting issues <br /></span>
-                <span className="font-bold italic">Automation <br /></span>
-                <span className="font-bold italic">Technical support for Product and Services<br /></span>
+              <p className="mb-4 space-y-1">
+                <span className="block italic">Full Stack Web Development</span>
+                <span className="block italic">RESTful API Design & Implementation</span>
+                <span className="block italic">Performance Optimization & Scalability</span>
+                <span className="block italic">Project Migration to Modern Architectures (MVC, React)</span>
+                <span className="block italic">Debugging & Troubleshooting</span>
+                <span className="block italic">LLM Integration for AI Personas and RAG Pipelines</span>
+                <span className="block italic">Technical Support for Products & Services</span>
               </p>
             </div>
           </div>

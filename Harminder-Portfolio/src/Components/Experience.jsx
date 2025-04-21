@@ -5,29 +5,25 @@ const experience = [
   {
     year: "Mar 2022 - Present",
     role: "Full Stack Developer",
-    Company: "E-One Moli Energy (Canada) Limited",
+    Company: "Molicel",
     Description:
-      "• Migrated codebase from VB Datasets to C# Lists, utilizing Object-Oriented Programming (OOP) principles and the LINQ API, improving data access speed by 30% and reducing memory usage by 20%\n" +
-      "• Developed a RESTful API with Express.js and MongoDB to automate data retrieval, increasing team productivity by 50%\n" +
-      "• Implemented OAuth-based authentication and authorization in React.js, Angular and ASP.NET MVC\n" +
-      "• Configured CI/CD pipeline using Jenkins as well as Azure to automate build and deployment process\n" +
-      "• Actively collaborated with Product Managers, DevOps to deliver efficient and scalable solutions\n" +
-      "• Gained familiarity with network topology and security principles to ensure secure system design\n" +
-      "• Conducted code reviews to maintain coding standards and to improve code quality\n" +
-      "• Rebuilt an internal website from jQuery and Knockout.js to ASP.NET Core with Angular, reducing maintenance efforts by 40%",
+      "-- Migrated organization’s legacy .NET Framework 4.7.2 web application to .NET 8 using ASP.NET Core MVC, reducing processing time by 40% and memory usage by 30%\n" +
+      "-- Built a real-time data visualization dashboard with React, Node.js/Express.js, SQL Server, and Plotly, improving sensor data clarity by 25%\n" +
+      "-- Developed an ASP.NET Core Web API with a React frontend, streamlining data retrieval and delivering responsive interfaces, cutting latency and boosting team productivity by 40%\n" +
+      "-- Collaborated with scientists to design a Python-based microservice using Scikit-learn and XGBoost, predicting battery cell self-discharge with 30% improved accuracy\n" +
+      "-- Developed unit tests for critical modules using NUnit and xUnit, achieving 95% test coverage and enhancing reliability via TDD",
 
-    technologies: ["C#/VB", ".NET", "ASP.Net", "MySql", "JS", "Angular", "React"],
+    technologies: [".NET/C#/VB", "Python", "ASP.NET Core", "MySql", "JavaScript", "Angular", "React"],
   },
   {
     year: "Sep 2020 - May 2021",
     role: "IT Support Assistant",
     Company: "Douglas College",
     Description:
-      "• Implemented a web scraper using Python and Beautiful Soup to automate the detection of dead links on a newly built college website, reducing manual effort by 50% and improving validation accuracy\n" +
-      "• Built a mentor-mentee registration app using Power Automate and SharePoint, streamlining student support services and increasing registration efficiency by 40%\n" +
-      "• Developed a microservice using Spring Boot, MongoDB and Angular for a college hostel, supporting over 1,000 users\n" +
-      "• Resolved technical issues on student portal platforms, improving system reliability and user satisfaction by 30%\n" +
-      "• Explored automated testing frameworks and implemented unit tests for critical modules",
+      "-- Built a Node.js/React app for 1,000+ hostel users, enhancing operational efficiency by 30%\n" +
+      "-- Developed a Scrapy-based web crawler to identify and resolve dead links on the college website, reducing manual effort by 50% and improving site reliability\n" +
+      "-- Created a mentor-mentee registration system using Power Automate and SharePoint in an Agile setting, increasing workflow efficiency by 40%\n" +
+      "-- Resolved enterprise application issues, cutting ticket time by 20%",
 
     technologies: ["Python", "MS Power Automate", "HTML/CSS", "JS", "MongoDB", "Angular", "Sharepoint"],
   },
@@ -36,10 +32,9 @@ const experience = [
     role: "Systems Engineer, SAP ABAP",
     Company: "Tata Consultancy Services",
     Description:
-      "• 2 years of experience as an ABAP/4 programmer consultant with working knowledge in SAP modules like MM, SD and HR\n" +
-      "• Experienced in enhancing standard SAP functionalities using BADI’s, Screen Exits, Menu exits, and Functional module exits\n" +
-      "• Worked on creation of multiple custom reports, interfaces, customer enhancements and smart forms\n" +
-      "• Worked on BDC programs to upload master data, purchase order and purchase info records",
+      "-- Worked in an Agile Scrum team as an SAP ERP ABAP/4 developer, specializing in SAP MM, SD, and HR\n" +
+      "-- Enhanced SAP MM/SD/HR modules with ABAP, implementing BADI’s and exits, reducing downtime by 30%\n" +
+      "-- Performed production support and troubleshooting for critical applications, reducing system downtime by 30%",
 
     technologies: ["SAP", "ABAP", "ALV", "SAP HANA", "BAPI", "USER EXIT"],
   },
@@ -53,7 +48,7 @@ const Experience = () => {
         transition={{ duration: 1.5 }}
         className="my-20 text-center text-4xl"
       >
-        Exp<span className="text-teal-600">erie</span>nce
+        Exp<span className="text-teal-600">erie</span>nce  (<span className="text-teal-600">5+ Years</span>)
       </motion.h2>
       <div>
         {experience.map((experience, index) => (
@@ -73,26 +68,28 @@ const Experience = () => {
             <motion.div
               whileInView={{ opacity: 1, x: 0 }}
               initial={{ opacity: 0, x: 100 }}
-              transition={{ duration: 1.5 }}
-              className="w-full max-w-xl lg:w-2/4"
+              transition={{ duration: 1.2 }}
+              className="w-full max-w-3xl lg:w-2/4 p-6 rounded-2xl bg-gradient-to-br from-[#ffffff33] via-[#00091d] to-[#111] shadow-lg border border-neutral-800"
             >
-              <h6 className="bg-gradient-to-r from-teal-300 via-slate-500 to-teal-500 bg-clip-text tracking-tight text-transparent font-bold text-xl block mb-2">
+              <h6 className="text-2xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-teal-300 via-slate-400 to-teal-500 mb-1">
                 {experience.role}
-                <span className="bg-gradient-to-r from-teal-300 via-slate-500 to-teal-500 bg-clip-text tracking-tight text-transparent font-semibold text-lg block">
-                  {experience.Company}
-                </span>
               </h6>
-              <p className="mb-4 text-neutral-400 break-words whitespace-pre-line text-justify">
-              {experience.Description}
+              <p className="text-lg font-semibold text-teal-400 mb-4">{experience.Company}</p>
+
+              <p className="mb-6 text-neutral-300 leading-relaxed whitespace-pre-line text-justify">
+                {experience.Description}
               </p>
-              {experience.technologies.map((tech, index) => (
-                <span
-                  key={index}
-                  className="mr-2 mt-2 rounded bg-neutral-800 px-2 py-1 text-sm font-medium text-teal-700"
-                >
-                  {tech}
-                </span>
-              ))}
+
+              <div className="flex flex-wrap gap-3">
+                {experience.technologies.map((tech, index) => (
+                  <span
+                    key={index}
+                    className="rounded-full bg-neutral-800 border border-teal-600 px-3 py-1 text-sm font-medium text-teal-300 hover:bg-teal-900/20 transition"
+                  >
+                    {tech}
+                  </span>
+                ))}
+              </div>
             </motion.div>
           </div>
         ))}

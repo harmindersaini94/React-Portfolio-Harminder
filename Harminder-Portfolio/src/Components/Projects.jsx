@@ -11,9 +11,9 @@ const projects = [
     title: "Portfolio",
     image: project1,
     description:
-      "• A dynamic and responsive portfolio website built using HTML, Tailwind CSS, JavaScript, React, Framer Motion, and Node.js.\n" +
-      "• This project showcases my skills and projects with smooth animations and transitions, providing an engaging user experience.\n" +
-      "• Implemented a CI/CD pipeline using GitHub and Vercel to automate the build and deployment process",
+      "-- A dynamic and responsive portfolio website built using HTML, Tailwind CSS, JavaScript, React, Framer Motion, and Node.js.\n" +
+      "-- This project showcases my skills and projects with smooth animations and transitions, providing an engaging user experience.\n" +
+      "-- Implemented a CI/CD pipeline using GitHub and Vercel to automate the build and deployment process",
     technology: ["HTML", "Tailwind", "JS", "React", "Framer Motion", "Node"],
     githublink: "https://github.com/harmindersaini94/React-Portfolio-Harminder",
     liveSiteLink: "https://hssaini.vercel.app/", 
@@ -23,9 +23,9 @@ const projects = [
     title: "Tech Blog",
     image: project2,
     description:
-      "• A modern and responsive website built using HTML, Tailwind CSS, JavaScript, React, Framer Motion, Node.js, React-Redux, and React-DOM for front-end handling.\n" +
-      "• Backend, including data storage and authentication, managed by Appwrite backend service.\n" +
-      "• Implemented a CI/CD pipeline using GitHub and Vercel to automate the build and deployment process",
+      "-- A modern and responsive website built using HTML, Tailwind CSS, JavaScript, React, Framer Motion, Node.js, React-Redux, and React-DOM for front-end handling.\n" +
+      "-- Backend, including data storage and authentication, managed by Appwrite backend service.\n" +
+      "-- Implemented a CI/CD pipeline using GitHub and Vercel to automate the build and deployment process",
     technology: [
       "HTML",
       "Tailwind",
@@ -45,9 +45,9 @@ const projects = [
     title: "Interactive Todo",
     image: project3,
     description:
-    "• Created a responsive and interactive TODO application using React, and styled with Tailwind CSS.\n" +
-    "• State is managed in the application using Redux and made use of local storage for data management.\n" +
-    "• Implemented a CI/CD pipeline using GitHub and Vercel to automate the build and deployment process",
+    "-- Created a responsive and interactive TODO application using React, and styled with Tailwind CSS.\n" +
+    "-- State is managed in the application using Redux and made use of local storage for data management.\n" +
+    "-- Implemented a CI/CD pipeline using GitHub and Vercel to automate the build and deployment process",
     technology: [
       "HTML",
       "Tailwind",
@@ -99,10 +99,12 @@ const Projects = () => {
               whileInView={{ opacity: 1, x: 0 }}
               initial={{ opacity: 0, x: 100 }}
               transition={{ duration: 1.5 }}
-              className="w-full max-w-xl lg:w-2/4"
+              className="w-full max-w-3xl lg:w-2/4 p-6 rounded-2xl bg-gradient-to-br from-[#ffffff33] via-[#00091d] to-[#111] shadow-lg border border-neutral-800"
             >
-              <h6 className="bg-gradient-to-r from-teal-300 via-slate-500 to-teal-500 bg-clip-text tracking-tight text-transparent font-bold text-xl block mb-2">{project.title}</h6>
-              <p className="mb-4 text-neutral-400 break-words whitespace-pre-line text-justify">{project.description}</p>
+              <h6 className="text-2xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-teal-300 via-slate-400 to-teal-500 mb-1">
+                {project.title}
+                </h6>
+              <p className="mb-6 text-neutral-300 leading-relaxed whitespace-pre-line text-justify">{project.description}</p>
               <div className="flex flex-wrap gap-2">
                 {project.technology.map((tech, index) => (
                   <span
