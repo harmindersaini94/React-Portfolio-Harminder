@@ -1,8 +1,15 @@
-# React + Vite
+# Harminder Singh Saini — portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Dark terminal portfolio for Harminder Singh Saini. React, Vite, Tailwind, and Framer Motion.
 
-Currently, two official plugins are available:
+```bash
+npm install
+npm run dev
+npm run build
+```
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+All copy, roles, metrics, projects, skills, and links live in `src/data/profile.js`. Sections render from that file.
+
+To add a portrait later, set `avatar.src` in `src/data/profile.js` (for example `"/portrait.jpg"`). While it is `null`, the site shows the HS terminal placeholder. `src/components/Avatar.jsx` is the only place that renders it.
+
+The resume download is `public/Harminder_Saini_Resume.pdf`.
