@@ -40,10 +40,10 @@ const About = () => {
           <div className="flex justify-center lg:justify-start">
             <div className="max-w-xl text-justify">
               <span className="bg-gradient-to-r from-teal-300 via-slate-500 to-aqua-500 bg-clip-text tracking-tight text-transparent font-bold text-xl block mb-2">
-                FullStack Software Engineer
+                Senior Full Stack Developer
               </span>
               <p className="mb-4">
-              Full-Stack Engineer with 5+ years in .NET, C#, ASP.NET, Python, React, and API integrations, optimizing business processes in Agile settings
+              Senior Full Stack Developer with 7 years designing and delivering scalable applications. Currently building the EPASS ERP at Fullsteam, including an Azure OpenAI powered natural-language search, Lit-based reporting dashboards, and production payment gateway integration.
               </p>
 
               <span className="bg-gradient-to-r from-teal-300 via-slate-500 to-purple-500 bg-clip-text tracking-tight text-transparent font-bold text-xl block mb-2">
@@ -53,11 +53,15 @@ const About = () => {
                 <span className="font-bold italic">Programming:{" "}</span> 
                 .NET/C#/VB, Python, JavaScript, Java, SAP ABAP <br />
                 <span className="font-bold italic">Web Dev:{" "}</span>
-                ASP.NET Core, Angular, React, React-Redux, Next.js, Django <br />
+                ASP.NET Core, Angular, React, React-Redux, Next.js, Django, Lit, EF Core, GraphQL <br />
                 <span className="font-bold italic">Databases & Backend Service:{" "}</span>
-                MySQL, MongoDB, Firebase, Appwrite <br />
+                MySQL, MongoDB, Firebase, Appwrite, SQL Server, PostgreSQL <br />
                 <span className="font-bold italic"> Cloud Technologies:{" "}</span> 
-                Azure DevOps, AWS Lambda, Azure Logic Apps, AWS S3, Amazon Lex
+                Azure DevOps, AWS Lambda, Azure Logic Apps, AWS S3, Amazon Lex <br />
+                <span className="font-bold italic">AI:{" "}</span>
+                Azure OpenAI, RAG & semantic search (in development) <br />
+                <span className="font-bold italic">Integration:{" "}</span>
+                Payment gateway integration
               </p>
 
             <span className="bg-gradient-to-r from-teal-300 via-slate-500 to-purple-500 bg-clip-text tracking-tight text-transparent font-bold text-xl block mb-2">
@@ -69,7 +73,7 @@ const About = () => {
                 <span className="block italic">Performance Optimization & Scalability</span>
                 <span className="block italic">Project Migration to Modern Architectures (MVC, React)</span>
                 <span className="block italic">Debugging & Troubleshooting</span>
-                <span className="block italic">LLM Integration for AI Personas and RAG Pipelines</span>
+                <span className="block italic">LLM Integration for AI Personas and RAG & semantic search (in development)</span>
                 <span className="block italic">Technical Support for Products & Services</span>
               </p>
             </div>

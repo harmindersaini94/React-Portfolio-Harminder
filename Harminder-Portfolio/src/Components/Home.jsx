@@ -9,7 +9,7 @@ const Home = () => {
   useEffect(() => {
     const typed = new Typed(workRoles.current, {
       strings: [
-        "Full Stack Engineer",
+        "Senior Full Stack Developer",
         "Coding Enthusiast",
         "Quick Learner",
         "Backend Developer",

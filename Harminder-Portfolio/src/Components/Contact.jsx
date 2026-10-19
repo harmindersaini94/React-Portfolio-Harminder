@@ -38,7 +38,7 @@ const Contact = () => {
         </motion.p>
 
         <a
-          href="mailto:harminder.saini111@gmail.com?subject=Initial Exploration Call for a Potential Oppurtunity!"
+          href="mailto:harminder.saini111@gmail.com?subject=Initial Exploration Call for a Potential Opportunity!"
           className="bg-gradient-to-r from-teal-300 via-slate-500 to-teal-500 bg-clip-text text-transparent font-bold text-xl"
         >
           Send Email

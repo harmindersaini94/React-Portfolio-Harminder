@@ -3,9 +3,23 @@ import { motion } from "framer-motion";
 
 const experience = [
   {
-    year: "Mar 2022 - Present",
+    year: "Jun 2025 - Present",
+    role: "Senior Full Stack Developer",
+    Company: "Fullsteam",
+    location: "Surrey, BC",
+    Description:
+      "-- Developed an Azure OpenAI powered natural-language search for an enterprise ERP (EPASS), translating user queries into structured JSON filters to retrieve live product, inventory, pricing, and sales data\n" +
+      "-- Designed a secure, extensible AI query architecture with .NET, GraphQL, and EF Core that enforces query validation and controlled database access, with planned expansion across ERP modules using RAG and semantic search\n" +
+      "-- Implemented and moved into production an accounts receivable (AR) payment flow that lets users pay through a generated link, spanning the UI, an authentication API layer, Fullsteam's in-house payment gateway API, and database updates that trigger native payment notification services\n" +
+      "-- Built the dashboard infrastructure in Lit and partnered with product managers and developers to deliver optimized EPASS Reports dashboards and widgets across domains, surfacing salesperson activity, products sold by last quarter, last year, or custom date range, and company-level sales performance\n" +
+      "-- Collaborated on researching and building the next-generation web-based EPASS ERP: a UI layer with a service layer for each module that calls an aggregator middle tier, which queries the database and returns results",
+
+    technologies: ["Lit", "Azure OpenAI", ".NET", "GraphQL", "EF Core", "Payment Gateway"],
+  },
+  {
+    year: "Mar 2022 - May 2025",
     role: "Full Stack Developer",
-    Company: "Molicel",
+    Company: "E One Moli Energy (Canada) Limited (Molicel)",
     Description:
       "-- Migrated organization’s legacy .NET Framework 4.7.2 web application to .NET 8 using ASP.NET Core MVC, reducing processing time by 40% and memory usage by 30%\n" +
       "-- Built a real-time data visualization dashboard with React, Node.js/Express.js, SQL Server, and Plotly, improving sensor data clarity by 25%\n" +
@@ -48,7 +62,7 @@ const Experience = () => {
         transition={{ duration: 1.5 }}
         className="my-20 text-center text-4xl"
       >
-        Exp<span className="text-teal-600">erie</span>nce  (<span className="text-teal-600">5+ Years</span>)
+        Exp<span className="text-teal-600">erie</span>nce  (<span className="text-teal-600">7 Years</span>)
       </motion.h2>
       <div>
         {experience.map((experience, index) => (
@@ -74,7 +88,12 @@ const Experience = () => {
               <h6 className="text-2xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-teal-300 via-slate-400 to-teal-500 mb-1">
                 {experience.role}
               </h6>
-              <p className="text-lg font-semibold text-teal-400 mb-4">{experience.Company}</p>
+              <p className="text-lg font-semibold text-teal-400 mb-4">
+                {experience.Company}
+                {experience.location ? (
+                  <span className="font-medium text-neutral-400"> · {experience.location}</span>
+                ) : null}
+              </p>
 
               <p className="mb-6 text-neutral-300 leading-relaxed whitespace-pre-line text-justify">
                 {experience.Description}
