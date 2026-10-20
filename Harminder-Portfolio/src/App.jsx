@@ -1,48 +1,74 @@
-import { Outlet } from "react-router-dom";
-import "./App.css";
-import About from "./Components/About";
-import Contact from "./Components/Contact";
-import Experience from "./Components/Experience";
-import Navbar from "./Components/Header/Navbar";
-import Home from "./Components/Home";
-import Projects from "./Components/Projects";
-import TechStack from "./Components/TechStack";
-import { motion, useScroll, useSpring } from "framer-motion";
+import { useEffect, useRef, useState } from "react";
+import { AnimatePresence, MotionConfig } from "framer-motion";
+import About from "./components/About";
+import BootScreen from "./components/BootScreen";
+import Contact from "./components/Contact";
+import CursorGlow from "./components/CursorGlow";
+import Experience from "./components/Experience";
+import Footer from "./components/Footer";
+import Hero from "./components/Hero";
+import Nav from "./components/Nav";
+import ScrollProgress from "./components/ScrollProgress";
+import Skills from "./components/Skills";
+import Work from "./components/Work";
+import usePrefersReducedMotion from "./hooks/usePrefersReducedMotion";
 
-function App() {
-  // VERY IMP, name here should be scrollYProgress only same for ScaleX
-  const { scrollYProgress } = useScroll(); // Means the scroll of Y axis (up down) will be recorded here
-  const scaleX = useSpring(scrollYProgress, {
-    // Means showing the record on the X-axis
-    stiffness: 100,
-    damping: 30,
-    restDelta: 0.001,
-  });
-
-  return (
-    <>
-      <motion.div
-        className="fixed top-0 left-0 right-0 h-1.5 bg-teal-600 origin-[0%]"
-        style={{ scaleX }}
-      />
-
-    <div className="overflow-x-hidden text-neutral-300 antialiased selection:bg-cyan-300 selection:text-cyan-900">
-     <div className="fixed top-0 -z-10 h-full w-full">
-
-<div  className="min-h-screen bg-gradient-to-br from-neutral-950 via-neutral-900 to-teal-950 flex py-12 px-4 lg:px-8"></div>
-        </div>
-        <div className="container mx-auto py-8">
-          <Navbar />
-          <Home />
-          <About />
-          <TechStack />
-          <Experience />
-          <Projects />
-          <Contact />
-        </div>
-      </div>
-    </>
-  );
+function alreadyBooted() {
+  if (typeof window === "undefined") return true;
+  try {
+    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return true;
+    return sessionStorage.getItem("hs-boot") === "1";
+  } catch {
+    return false;
+  }
 }
 
-export default App;
+export default function App() {
+  const reduce = usePrefersReducedMotion();
+  const shellRef = useRef(null);
+  const [booted, setBooted] = useState(alreadyBooted);
+
+  useEffect(() => {
+    const shell = shellRef.current;
+    if (!shell) return;
+    if (booted) shell.removeAttribute("inert");
+    else shell.setAttribute("inert", "");
+  }, [booted]);
+
+  const finishBoot = () => {
+    try {
+      sessionStorage.setItem("hs-boot", "1");
+    } catch {
+      /* private mode */
+    }
+    setBooted(true);
+  };
+
+  return (
+    <MotionConfig reducedMotion="user">
+      <ScrollProgress />
+      <CursorGlow />
+      <div ref={shellRef} className="relative z-10">
+        <a
+          href="#main"
+          className="sr-only focus:not-sr-only focus:fixed focus:left-3 focus:top-3 focus:z-[60] focus:rounded-md focus:bg-mint focus:px-3 focus:py-2 focus:font-mono focus:text-sm focus:font-bold focus:text-bg focus:outline-none"
+        >
+          Skip to content
+        </a>
+        <Nav />
+        <main id="main" tabIndex={-1} className="outline-none">
+          <Hero ready={booted || reduce} />
+          <About />
+          <Work />
+          <Experience />
+          <Skills />
+          <Contact />
+        </main>
+        <Footer />
+      </div>
+      <AnimatePresence>
+        {!booted && !reduce && <BootScreen key="boot" onDone={finishBoot} />}
+      </AnimatePresence>
+    </MotionConfig>
+  );
+}
