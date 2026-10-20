@@ -34,7 +34,7 @@ const profile = {
     title: "Harminder Singh Saini · Senior Full Stack Developer",
     description:
       "Harminder Singh Saini, Senior Full Stack Developer in Surrey, BC. 7 years shipping scalable systems in .NET, React, GraphQL and Azure OpenAI.",
-    url: "https://react-portfolio-harminder.vercel.app/",
+    url: "https://hssaini.vercel.app",
   },
   avatar: {
     src: null,
@@ -195,7 +195,7 @@ const profile = {
         "React, Framer Motion, and Tailwind. CI/CD with GitHub and Vercel.",
       image: null,
       imageAlt: "",
-      live: "https://react-portfolio-harminder.vercel.app",
+      live: "https://hssaini.vercel.app",
       source: "https://github.com/harmindersaini94/React-Portfolio-Harminder",
     },
   ],
