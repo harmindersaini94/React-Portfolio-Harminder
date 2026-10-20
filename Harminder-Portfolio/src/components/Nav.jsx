@@ -48,8 +48,12 @@ export default function Nav() {
 
   const onNavigate = (event, href) => {
     event.preventDefault();
+    const menuWasOpen = open;
     setOpen(false);
     scrollToSection(href);
+    if (menuWasOpen) {
+      window.setTimeout(() => scrollToSection(href), 320);
+    }
   };
 
   return (

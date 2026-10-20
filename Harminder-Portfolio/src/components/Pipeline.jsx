@@ -40,24 +40,23 @@ export default function Pipeline({ pipeline }) {
 
     let stopped = false;
     let timer = 0;
+    let active;
     let index = 0;
     y.set(centers[0]);
 
     const travel = () => {
       if (stopped) return;
-      const controls = animate(y, centers[index], {
+      active = animate(y, centers[index], {
         duration: 0.48,
         ease: [0.45, 0, 0.2, 1],
       });
-      controls.finished
-        .then(() => {
-          if (stopped) return;
-          timer = window.setTimeout(() => {
-            index = (index + 1) % centers.length;
-            travel();
-          }, 520);
-        })
-        .catch(() => {});
+      active.then(() => {
+        if (stopped) return;
+        timer = window.setTimeout(() => {
+          index = (index + 1) % centers.length;
+          travel();
+        }, 520);
+      });
     };
 
     travel();
@@ -65,6 +64,7 @@ export default function Pipeline({ pipeline }) {
     return () => {
       stopped = true;
       window.clearTimeout(timer);
+      active?.stop();
     };
   }, [centers, inView, reduce, y]);
 

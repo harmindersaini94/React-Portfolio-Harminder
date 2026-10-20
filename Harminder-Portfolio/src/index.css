@@ -32,10 +32,6 @@ body {
   border-radius: 6px;
 }
 
-.section-anchor {
-  scroll-margin-top: 4.5rem;
-}
-
 .grid-mask {
   mask-image: linear-gradient(to bottom, #000 42%, transparent);
 }
