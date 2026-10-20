@@ -140,7 +140,9 @@ export default function Work() {
                     </p>
                     <p className="mt-2 text-fg">React · Framer Motion · Tailwind</p>
                     <p>CI/CD · GitHub · Vercel</p>
-                    <p className="mt-3 text-amber">live · react-portfolio-harminder</p>
+                    <p className="mt-3 text-amber">
+                      live · {project.live.replace(/^https?:\/\//, "").replace(/\/$/, "")}
+                    </p>
                   </div>
                 )}
                 <div className="p-5">
