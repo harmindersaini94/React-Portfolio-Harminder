@@ -1,0 +1,13 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "rewrites": [
+    {
+      "source": "/sikhi/privacy",
+      "destination": "/sikhi/privacy/index.html"
+    },
+    {
+      "source": "/sikhi/privacy/",
+      "destination": "/sikhi/privacy/index.html"
+    }
+  ]
+}
